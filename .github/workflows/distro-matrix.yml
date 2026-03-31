@@ -60,7 +60,7 @@ jobs:
   smoke-test:
     name: "${{ matrix.distro }} / ${{ matrix.backend }}"
     runs-on: ubuntu-latest
-    needs: [build-ci-images]
+
 
     strategy:
       fail-fast: false
