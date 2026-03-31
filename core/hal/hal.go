@@ -1,7 +1,7 @@
 // Package hal defines the Backend interface that every immutability backend
 // must implement, and the registry that maps backend names to implementations.
 //
-// All ILF operations (upgrade, rollback, snapshot, etc.) are dispatched
+// All PIF operations (upgrade, rollback, snapshot, etc.) are dispatched
 // through this interface so the rest of the framework stays backend-agnostic.
 package hal
 
@@ -29,9 +29,14 @@ const (
 type Status struct {
 	Backend     string
 	CurrentRoot string // e.g. "A", "snapshot-3", "subvol-@.20250101"
-	Mutable     bool
-	Snapshots   []SnapshotInfo
-	Extra       map[string]string // backend-specific key/value pairs
+
+	// Mutable indicates whether the system is currently in a writable session.
+	// Backends that do not track this themselves should leave it false; the CLI
+	// layer overrides it with mutable.LockExists() which is always authoritative.
+	Mutable bool
+
+	Snapshots []SnapshotInfo
+	Extra     map[string]string // backend-specific key/value pairs
 }
 
 // SnapshotInfo describes a single snapshot entry.
@@ -63,7 +68,7 @@ type Backend interface {
 	Capabilities() Capability
 
 	// Init sets up the backend for first use on this system.
-	// Called once during `ilf init`.
+	// Called once during `pif init`.
 	Init(cfg map[string]string) error
 
 	// Upgrade performs an atomic system upgrade.
