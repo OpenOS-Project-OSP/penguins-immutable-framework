@@ -122,4 +122,4 @@ Each integrated backend retains its original license. PIF framework code
 
 ## Upstream
 
-Forked from [Interested-Deving-1896/immutable-linux-framework](https://gitlab.com/openos-project/immutable-filesystem_deving/immutable-linux-framework).
+Forked from [openos-project/immutable-linux-framework](https://gitlab.com/openos-project/immutable-filesystem_deving/immutable-linux-framework).
