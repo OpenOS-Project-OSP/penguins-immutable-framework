@@ -26,6 +26,9 @@ linters:
       # local and CI can produce false positives on comment formatting.
       - path: "core/hooks/hooks.go"
         linters: [gofmt, goimports]
+      # mutable.go: f.Close and os.RemoveAll are best-effort probe/cleanup calls.
+      - path: "core/mutable/mutable.go"
+        linters: [errcheck]
 
 formatters:
   enable:
