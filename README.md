@@ -59,13 +59,21 @@ _Contributors pending._
 ## Origins
 
 <!-- AI:start:origins -->
-_Original project — no upstream fork._
+
+Forked and rebranded from the penguins ecosystem immutability work.
+
+| Origin | Host | Fork in I-D-1896 |
+|--------|------|-----------------|
+| [Interested-Deving-1896/immutable-linux-framework](https://github.com/Interested-Deving-1896/immutable-linux-framework) | GitHub | ✅ |
+| [Interested-Deving-1896/penguins-eggs](https://github.com/Interested-Deving-1896/penguins-eggs) | GitHub | ✅ |
 <!-- AI:end:origins -->
 
 ## Resources
 
 <!-- AI:start:resources -->
-_No additional resource files found._
+| File | Description |
+|---|---|
+| [dep-graph/origins.md](https://github.com/Interested-Deving-1896/penguins-immutable-framework/blob/main/dep-graph/origins.md) | Dependency graph (Markdown table) |
 <!-- AI:end:resources -->
 
 ## License
