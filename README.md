@@ -1,7 +1,8 @@
 [update-readmes]   Mode: rewrite — migrating to template structure...
 # penguins-immutable-framework
 
-[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/penguins-immutable-framework)
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/OpenOS-Project-OSP/penguins-immutable-framework) [![KDE Eco](https://img.shields.io/badge/KDE%20Eco-certified-brightgreen?logo=kde&logoColor=white&style=flat-square)](https://eco.kde.org/) [![Blue Angel](https://img.shields.io/badge/Blue%20Angel-DE--UZ%20215-0055a4?style=flat-square)](https://www.blauer-engel.de/en/certification/criteria) [![Energy](https://api.green-coding.io/v1/ci/badge/get?repo=OpenOS-Project-OSP%2Fpenguins-immutable-framework&branch=main&workflow=eco-audit.yml)](https://metrics.green-coding.io/ci-index.html)
+
 
 <!-- AI:start:what-it-does -->
 This project provides an immutable framework for managing and deploying Linux-based systems within the Penguins ecosystem. It is a fork of the Interested-Deving-1896 project, rebranded and extended to support integration with Penguins-specific tools like Eggs and Powerwash. It is used by system administrators and developers to configure, build, and maintain consistent, immutable system environments. The framework includes tools for configuration management, systemd integration, and plugin-based extensibility.
